@@ -1,0 +1,18 @@
+{
+  "name": "sirius_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startbot": "node ./index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "oicq": "^1.18.3",
+    "seed-random": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  }
+}
