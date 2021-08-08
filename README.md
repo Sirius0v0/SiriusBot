@@ -25,6 +25,7 @@
 机器人基于 Node.js 开发，感谢以下开源项目：
 
 + [oicq](https://github.com/takayama-lily/oicq) 
++ [mongodb](npm install mongodb) 
 + [seed-random](https://github.com/ForbesLindesay/seed-random) 
 
 ## 一些参考资料
