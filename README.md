@@ -1,24 +1,13 @@
-# SiriusBot
+# LingCat-bot
 
 ## TODO List
 
-+ 随机功能
-  - [ ] 今日人品
-  - [ ] 今日mc
 + 小游戏
   - [ ] 24点
-  - [ ] hangman
   - [ ] blackjack
 + 查询与服务
   - [ ] Wiki查询
 
-+ 项目辅助
-  - [ ] 权限检查
-  - [ ] 功能帮助
-  - [ ] 功能开关
-  - [ ] 设置种子的随机数
-  - [ ] 被禁言不触发
-  - [ ] 用户撤回跟随
 
 ## 技术细节
 
@@ -26,7 +15,6 @@
 
 + [oicq](https://github.com/takayama-lily/oicq) 
 + [mongodb](npm install mongodb) 
-+ [seed-random](https://github.com/ForbesLindesay/seed-random) 
 
 ## 一些参考资料
 
