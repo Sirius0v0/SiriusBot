@@ -60,7 +60,7 @@ SiriOS 致力于为群友提供一个娱乐的互动方案，让群友们友好�
 1. 安装管理工具
 
 ```bash
-$ npm i sirios-cli
+$ npm i sirios-cli -g
 ```
 
 2. 初始化项目：
