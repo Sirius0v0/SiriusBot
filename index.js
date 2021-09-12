@@ -35,6 +35,7 @@ const { jrjh } = require("./plugins/jr-dontstarve/plugin-jrjh");      // 今日�
 const { jrmc } = require("./plugins/jrmc/plugin-jrmc");       // 今日MC
 const { jrrp } = require("./plugins/plugin-jrrp");        // 今日人品
 const { jrmchl } = require("./plugins/plugin-jrmchl");        // 今日mc运势
+const { chp } = require("./plugins/plugin-chp");       // 彩虹屁
 const { ticTactics } = require("./plugins/tic-tactics/plugin-tic-tactics");     // 超级井字棋
 const { baiduForU } = require("./plugins/plugin-baidu-for-u");     // 为你百度
 const { send } = require("./plugins/plugin-send");    // 反馈
@@ -104,6 +105,9 @@ bot.on("message.group.normal", function (e) {
             break;
         case "-bili":       // bilibili相关工具
             biliLive(this, e, args);
+            break;
+        case "-彩虹屁":     // 彩虹屁
+            chp(this, e, args);
             break;
         default:            // 触发自定义回复
             customReply(this, e, cmd);
