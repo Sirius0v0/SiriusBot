@@ -38,6 +38,7 @@ const { jrmchl } = require("./plugins/plugin-jrmchl");        // 今日mc运势
 const { ticTactics } = require("./plugins/tic-tactics/plugin-tic-tactics");     // 超级井字棋
 const { baiduForU } = require("./plugins/plugin-baidu-for-u");     // 为你百度
 const { send } = require("./plugins/plugin-send");    // 反馈
+const { biliLive, getEveryLiveStatus } = require("./plugins/bilibili/plugin-bili-live"); // bili直播间
 // 通知类插件
 const { increase } = require("./plugins/plugin-increase");      // 入群欢迎
 const { decrease } = require("./plugins/plugin-decrease");     // 退群
@@ -83,7 +84,7 @@ bot.on("message.group.normal", function (e) {
         case "-24点":       // 24点游戏
             g24points(this, e, args);
             break;
-        case "-井字棋":
+        case "-井字棋":     // 井字棋
             ticTactics(this, e, args);
             break;
         case "#set":        // 添加自定义词
@@ -100,6 +101,9 @@ bot.on("message.group.normal", function (e) {
             break;
         case "#update":     // 更新
             update(this, e, args);
+            break;
+        case "-bili":       // bilibili相关工具
+            biliLive(this, e, args);
             break;
         default:            // 触发自定义回复
             customReply(this, e, cmd);
@@ -131,6 +135,9 @@ bot.on("notice.group", function (e) {
             break;
     }
 })
+
+// 定时任务插件
+let biliLiveId = setInterval(getEveryLiveStatus, 1 * 30 * 1000, bot);   // bilibili直播状态推送
 
 /* === test plugins === */
 // require("./plugins/custom-reply/plugin-custom-reply");  // 自定义回复

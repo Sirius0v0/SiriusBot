@@ -148,6 +148,18 @@
 				"admin",
 				"owner"
 			]
+		},
+		"_直播间": {
+			"activation": true,
+			"help": {
+				"desc": "bilibili直播查询与推送",
+				"cmd": "-bili"
+			},
+			"isadmin": [
+				"member",
+				"admin",
+				"owner"
+			]
 		}
 	}
 }
