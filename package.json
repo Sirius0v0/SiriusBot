@@ -3,7 +3,7 @@
     "account": 447010560,
     "botNickname": "小天狼星",
     "owner": 1694605269,
-    "version": "2.1.3",
+    "version": "2.1.4",
     "description": "",
     "main": "index.js",
     "scripts": {
