@@ -43,6 +43,7 @@ const { biliLive, getEveryLiveStatus } = require("./plugins/bilibili/plugin-bili
 const { ping } = require("./plugins/mcbot/plugin-mcbot");   // mcbot
 const { repeater } = require("./plugins/plugin-repeater");      // 复读
 const { noAbbreviated } = require("./plugins/plugin-yyds");      // 好好说话 
+const { getWordCloud, getMessage } = require("./plugins/wordCloud/plugin-wordcloud");       // 词云分析
 // 通知类插件
 const { increase } = require("./plugins/plugin-increase");      // 入群欢迎
 const { decrease } = require("./plugins/plugin-decrease");     // 退群
@@ -115,7 +116,11 @@ bot.on("message.group.normal", function (e) {
         case "-mc":         // mcbot
             ping(this, e, args);
             break;
+        // case "-wordcloud":  // 词云分析
+        //     getWordCloud(this, e, args);
+        //     break;
         default:
+            getMessage(this, e);
             noAbbreviated(this, e); // 好好说话
             repeater(this, e);      // 复读
             customReply(this, e, cmd);  // 触发自定义回复
@@ -150,7 +155,3 @@ bot.on("notice.group", function (e) {
 
 // 定时任务插件
 let biliLiveId = setInterval(getEveryLiveStatus, 1 * 30 * 1000, bot);   // bilibili直播状态推送
-
-/* === test plugins === */
-// require("./plugins/custom-reply/plugin-custom-reply");  // 自定义回复
-/* ==== NOT STABLE ==== */
