@@ -3,7 +3,7 @@
     "account": 447010560,
     "botNickname": "小天狼星",
     "owner": 1694605269,
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -15,6 +15,7 @@
         "axios": "^0.21.4",
         "cheerio": "^1.0.0-rc.10",
         "jimp": "^0.16.1",
+        "log4js": "^6.3.0",
         "mathjs": "^9.4.4",
         "minecraft-protocol": "^1.26.5",
         "mongodb": "^4.1.0",
@@ -22,6 +23,7 @@
         "seed-random": "^2.2.0"
     },
     "devDependencies": {
-        "@types/node": "^16.4.13"
+        "@types/node": "^16.4.13",
+        "nth-check": ">=2.0.1"
     }
 }
