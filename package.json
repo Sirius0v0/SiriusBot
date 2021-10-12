@@ -22,7 +22,8 @@
         "mongodb": "^4.1.0",
         "oicq": "^1.19.3",
         "quick-midi": "^1.0.1",
-        "seed-random": "^2.2.0"
+        "seed-random": "^2.2.0",
+        "silk-sdk": "^0.2.2"
     },
     "devDependencies": {
         "@types/node": "^16.4.13",
