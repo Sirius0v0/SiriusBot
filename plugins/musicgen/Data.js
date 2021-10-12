@@ -29,10 +29,15 @@ class Data {
     }
 
     updateMusic = (uname = null, music = null) => {
+        let status = false;
         let musicList = this.getMusicList();
-        if (typeof musicList[uname] === "undefined") musicList[uname] = music;
+        if (typeof musicList[uname] === "undefined") {
+            musicList[uname] = music;
+            status = true;
+        }
         this._music_list = musicList;
         this.dump();
+        return true;
     }
 
     getMusicName = () => {
