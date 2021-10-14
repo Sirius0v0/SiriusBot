@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\plugins\\increase\\plugin-increase.js"
+            "program": "${workspaceFolder}\\index.js"
         }
     ]
 }

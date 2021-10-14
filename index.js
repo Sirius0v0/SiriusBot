@@ -65,7 +65,7 @@ const { noAbbreviated } = require("./plugins/plugin-yyds");      // 好好说话
 const { getWordCloud, getMessage } = require("./plugins/wordCloud/plugin-wordcloud");       // 词云分析
 const { echo } = require("./plugins/plugin-echo");  // 复述功能
 const { findPic } = require("./plugins/plugin-findPic");       // 搜图
-const { musicgen } = require("./plugins/musicgen/plugin-musicgen");     // 生成音乐 
+const { musicgen } = require("./plugins/musicgen/test");     // 生成音乐 
 // const { checkRecall } = require("./plugins/plugin-check-recall");       // 查撤回
 // 通知类插件
 const { increase, setWelcomeMsg } = require("./plugins/increase/plugin-increase");      // 入群欢迎

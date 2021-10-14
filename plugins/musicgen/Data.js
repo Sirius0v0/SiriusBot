@@ -31,13 +31,13 @@ class Data {
     updateMusic = (uname = null, music = null) => {
         let status = false;
         let musicList = this.getMusicList();
-        if (typeof musicList[uname] === "undefined") {
+        if (Object.keys(musicList).indexOf(uname) === -1) {
             musicList[uname] = music;
             status = true;
         }
         this._music_list = musicList;
         this.dump();
-        return true;
+        return status;
     }
 
     getMusicName = () => {
